@@ -112,7 +112,7 @@ def train(data, plot=False):
 
 if __name__ == "__main__":
     dataset = Planetoid(root='/tmp/Cora', name='Cora')
-
+    
     plot_dataset(dataset)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
